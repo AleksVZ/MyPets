@@ -1,0 +1,106 @@
+@import "bootstrap.css";
+header {
+  border: 1px solid black;
+  background: #DEB887;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 576px) {
+  header .container-sm, header .container {
+    max-width: 100%;
+  }
+}
+header .nav {
+  height: 50px;
+  width: 100%;
+  background: #DEB887;
+  position: relative;
+}
+header .nav > .nav-header {
+  display: inline;
+}
+header .nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #663300;
+  padding: 10px 10px 10px 10px;
+  font-weight: 900;
+}
+header .nav > .nav-btn {
+  display: none;
+}
+header .nav > .nav-links {
+  display: inline;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+header .nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #663300;
+}
+header .nav > .nav-links > a:hover {
+  background-color: #DEB887;
+}
+header .nav > #nav-check {
+  display: none;
+}
+@media (max-width: 800px) {
+  header .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  header .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  header .nav > .nav-btn > label:hover, header .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(153, 102, 51, 0.4784313725);
+    border-radius: 3px;
+  }
+  header .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #663300;
+  }
+  header .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 106%;
+    background-color: #DEB887;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 65px;
+    left: 0px;
+    margin-left: -15px;
+    font-size: 28px;
+  }
+  header .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #996633;
+  }
+  header .nav > .nav-links > a:hover {
+    background: #996633;
+    color: #DEB887;
+  }
+  header .nav > .nav-links > a:first-child {
+    border-top: 1px solid #996633;
+  }
+  header .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  header .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
