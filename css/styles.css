@@ -1,6 +1,5 @@
 @import "bootstrap.css";
 header {
-  border: 1px solid black;
   background: #DEB887;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -34,15 +33,24 @@ header .nav > .nav-links {
   text-align: center;
   font-size: 18px;
   text-transform: uppercase;
+  margin: auto;
 }
 header .nav > .nav-links > a {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
   color: #663300;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-weight: 600;
 }
 header .nav > .nav-links > a:hover {
   background-color: #DEB887;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 header .nav > #nav-check {
   display: none;
@@ -88,10 +96,15 @@ header .nav > #nav-check {
     display: block;
     width: 100%;
     border-bottom: 1px solid #996633;
+    border-top: none;
   }
   header .nav > .nav-links > a:hover {
     background: #996633;
     color: #DEB887;
+    -webkit-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    transition: none;
   }
   header .nav > .nav-links > a:first-child {
     border-top: 1px solid #996633;

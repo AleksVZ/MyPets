@@ -1,5 +1,5 @@
 header{
-    border: 1px solid black;
+
     background: $BurlyWood;
 
     padding-top: 15px;
@@ -20,8 +20,7 @@ header{
         width: 100%;
         background: $BurlyWood;
         position: relative;
-      }
-      
+      }      
       .nav > .nav-header {
         display: inline;
       }
@@ -32,7 +31,7 @@ header{
         color:#663300;
         padding: 10px 10px 10px 10px;
         font-weight: 900;
-       
+
       }
       
       .nav > .nav-btn {
@@ -44,6 +43,8 @@ header{
         text-align: center;
         font-size: 18px;
         text-transform: uppercase;
+        margin: auto;
+
 
       }
       
@@ -52,10 +53,21 @@ header{
         padding: 13px 10px 13px 10px;
         text-decoration: none;
         color:$Brown;
+        // transition: 0.3s ease;
+        text-decoration: none;
+
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: 600;
       }
       
       .nav > .nav-links > a:hover {
         background-color: $BurlyWood;
+        @include links;
+
+
+
+        
       }
       
       .nav > #nav-check {
@@ -103,13 +115,18 @@ header{
           display: block;
           width: 100%;
           border-bottom: 1px solid $BrownLight;
+          border-top: none;
           &:hover{
             background: $BrownLight;
             color:$BurlyWood;
+            transform: none;
+            transition:  none;
+
           }
         }
         .nav > .nav-links > a:first-child{
           border-top: 1px solid $BrownLight;
+
         }
         .nav > #nav-check:not(:checked) ~ .nav-links {
           height: 0px;

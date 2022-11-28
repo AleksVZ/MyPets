@@ -13,6 +13,11 @@ $BurlyWood: #DEB887;
 $Brown:#663300;
 $BrownLight:#996633;
 
+@mixin links{
+    transform: scale(1.2, 1.2);
+    transition:  0.3s;
+}
+
 
 // @mixin hover {
 //     transition: 0.2s;
