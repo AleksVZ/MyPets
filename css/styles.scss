@@ -2,15 +2,21 @@
 
 
 @import "bootstrap.css";
+@import "owl.carousel.min.css";
+@import "owl.theme.default.min.css";
+
+
 
 @import "mixins.scss";
 @import "header.scss";
+@import "main_page.scss";
+@import "footer.scss";
 
 
 
 
 
-// .container{
-//     // max-width: 1200px;
-//     // margin: auto;
-// }
+.container{
+    max-width: 1200px;
+    margin: auto;
+}

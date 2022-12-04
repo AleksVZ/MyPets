@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPets</title>
 
+  
 
 
     <link rel="stylesheet" href="css/styles.css">
@@ -13,32 +14,88 @@
 <body>
     <header>
         <div class="container">
+          <div class="nav">
+              <input type="checkbox" id="nav-check">
+              <div class="nav-header">
+                <div class="nav-title">
+                  MyPets
+                </div>
+              </div>
+              <div class="nav-btn">
+                <label for="nav-check">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </label>
+              </div>
+              
+              <div class="nav-links">
+                <a href="#" >Животные</a>
+                <a href="#">Уход</a>
+                <a href="#">Открытки</a>
+                <a href="#">Статьи</a>
 
-        <!--TODO  ==============            menu -->
+              </div>
+          </div>
+      </div>
+    </header>
 
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-              <div class="nav-title">
-                MyPets
+<!--TODO ==============          main page -->
+
+        <section class="main_page">
+          <div class="container main_page_box1">
+            <h1>MyPets</h1>
+            <p>Добро пожаловать на сайт MyPets. <br>
+            Сайт про домашних животных.</p>
+          
+          </div>
+          
+          <div class="blank">
+            <p>
+            Сайт создан в ознакомительных целях для всех любителей домашних животных.
+            Здесь вы можете найти море информации о своих любимцах. Даже если вы только собираетесь завести домашнего питомца мы поможем вам с выбором. Мы собрали информацию и описание многих животных, начиная от кошек и собак, и заканчивая редкими видами рептилий и насекомых. Так же мы включили советы по уходу, лечению и различные статьи, которые могут быть вам интересны.<br>
+            Мы рады что вы с нами!
+            </p>
+
+          </div>
+          
+          <div class="container second">
+            <div class="item">
+              <div class="img img-first"></div>
+              <div class="card">
+                <h3>Rock climbing</h3>
+                <p>The goal is to reach the summit of a formation or the endpoint of a usually pre-defined route without falling</p>
+                <a href="#">Читать...</a>
               </div>
             </div>
-            <div class="nav-btn">
-              <label for="nav-check">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
+            <div class="item">
+              <div class="img img-second"></div>
+              <div class="card">
+                <h3>Caving</h3>
+                <p>Exploring underground through networks of tunnels and passageways, which can be natural or artificial.</p>
+                <a href="#">Читать...</a>
+              </div>
             </div>
-            
-            <div class="nav-links">
-              <a href="#" >Животные</a>
-              <a href="#">Уход</a>
-              <a href="#">Открытки</a>
-              <a href="#">Статьи</a>
-
+            <div class="item">
+              <div class="img img-third"></div>
+              <div class="card">
+                <h3>Parachuting</h3>
+                <p>Jumping from an aeroplane and falling through the air before opening your parachute.</p>
+                <a href="#">Читать...</a>
+              </div>
             </div>
           </div>
+          
+          <div class="blank"></div>
+          
+
+
+
+
+
+ 
+
+          
 
 
 
@@ -54,8 +111,44 @@
 
 
 
-        </div>
-    </header>
+
+
+
+
+          </div>
+        </section>
+ <!--TODO ==============          footer -->
+ 
+
+
+
+
+
+        
+        <footer>
+          <div class="container">
+
+          </div>
+        </footer>
+
+ 
+          
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -87,7 +180,12 @@
     integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
 
-    <script src="scripts.js/bootstrap.js"></script>
-    <script src="scripts.js/scripts.js"></script>
+   
+    <script src="js/owl.carousel.js"></script>
+
+
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
