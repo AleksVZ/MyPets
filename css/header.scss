@@ -20,7 +20,13 @@ header{
         width: 100%;
         background: $BurlyWood;
         position: relative;
-        top: -158px;
+        // top: -158px;
+        top: -26px;
+        
+        
+        // @media (max-width:800px) {
+        //     top: -36px;
+        //   }
       }      
       .nav > .nav-header {
         display: inline;
@@ -75,8 +81,8 @@ header{
         .nav > .nav-btn {
           display: inline-block;
           position: absolute;
-          right: 0px;
-          top: 0px;
+          right: 8px;
+          top: 5px;
         }
         .nav > .nav-btn > label {
           display: inline-block;
@@ -102,7 +108,7 @@ header{
           height: 0px;
           transition: all 0.3s ease-in;
           overflow-y: hidden;
-          top: 65px;
+          top: 59px;
           left: 0px;
           margin-left: -15px;
           font-size: 28px;
