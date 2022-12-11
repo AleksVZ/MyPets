@@ -1,16 +1,310 @@
 footer{
     background: $Brown;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 
 
 
+    .footer_flex_wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
 
 
+        .footer_wrapper_right{
 
-
-
-
-
+            p:first-child{
+                font-weight: 700;
+                font-size: 95px;
+                color: $BurlyWood;       
+                &::after{
+                    display: inline-block;
+                    content: "\f1b0";
+                    font-weight: 900;
+                    font-family: "Font Awesome 6 Free";
+                    font-size: 10px;
+                    color: $BrownLight;
+                    margin-right: 9px;
+                    transform: rotate(90deg);
+                }
+            }
+            p:last-child{
+                font-weight: 700;
+                font-size: 20px;
+                color: $BurlyWood;      
+                  
+            }
     
+        }
+
+
+        .footer_wrapper_left{
+            display: flex;
+            ul{
+                list-style: none;
+
+                li{
+                    
+                    a{
+                        color: $BurlyWood;
+                        text-decoration: none;
+                        font-size: 18px;
+                    }
+                    &::before{
+                        display: inline-block;
+                        content: "\f1b0";
+                        font-weight: 900;
+                        font-family: "Font Awesome 6 Free";
+                        font-size: 10px;
+                        color: $BrownLight;
+                        margin-right: 9px;transform: rotate(45deg);
+
+
+                    }
+                }
+                
+            }
+            ul:last-child{
+                margin-left: 60px;
+                
+            }
+        }
+    }
+
+
+// .trap_move{
+//     position: relative;
+//     top: 151px;
+//     right: -148px;
+//     .trap_up,
+//     .trap_down{
+//         list-style: none;
+//         display: flex;
+//         margin-bottom: -4px;
+
+//         li{
+//             &::after{
+//                 display: inline-block;
+//                 content: "\f1b0";
+//                 font-weight: 900;
+//                 font-family: "Font Awesome 6 Free";
+//                 font-size: 10px;
+//                 // color: $BrownLight;
+//                 margin-right: 27px;
+//                 transform: rotate(90deg);
+                
+            
+//             }
+//         }
+//     }
+    
+
+//     .trap_up{
+//        li:first-child{
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 1s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(2){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 2s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(3){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 3s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(4){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 4s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(5){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 5s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(6){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 6s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(7){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 7s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(8){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 8s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(9){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 9s;
+//         animation-fill-mode: forwards;
+//     }
+//     li:nth-child(10){
+//         color: $Brown;
+//         animation-name: trap;
+//         animation-duration: 3s;
+//         animation-delay: 10s;
+//         animation-fill-mode: forwards;
+//     }
+//     }
+
+
+//     .trap_down{
+//         margin-left: 25px;
+//         li:first-child{
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 1.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(2){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 2.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(3){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 3.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(4){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 4.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(5){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 5.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(6){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 6.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(7){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 7.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(8){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 8.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(9){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 9.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      li:nth-child(10){
+//          color: $Brown;
+//          animation-name: trap;
+//          animation-duration: 3s;
+//          animation-delay: 10.5s;
+//          animation-fill-mode: forwards;
+//      }
+//      }
+
+
+// }
+// @keyframes trap{
+//     0%{
+//     color: $BurlyWood;
+
+
+//     }
+//     100%{
+//         color: $Brown;
+
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  прозрачные буквы
+    //     .title_wrap{
+
+    //   .title{
+    //     font-weight: 800;
+    //     color: transparent;
+    //     font-size:120px;
+    //     background: url("../img/bg3.jpg") repeat;
+    //     background-position: 40% 50%;
+    //     -webkit-background-clip: text;
+    //     background-clip: text;
+    //     position:relative;
+    //     letter-spacing: -8px;
+
+    //     width: 406px;
+    //   }
+
+
+    //     }
+
+
+
+
+
+
+
+
+
+
+  
 }
