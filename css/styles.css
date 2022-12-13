@@ -16,8 +16,10 @@ header .nav {
   height: 70px;
   width: 100%;
   background: #DEB887;
-  position: relative;
-  top: -26px;
+  top: 26px;
+  position: fixed;
+  z-index: 10000;
+  max-width: 1200px;
 }
 header .nav > .nav-header {
   display: inline;

@@ -19,9 +19,13 @@ header{
         height: 70px;
         width: 100%;
         background: $BurlyWood;
-        position: relative;
-        // top: -158px;
-        top: -26px;
+        // position: relative;
+        top: 26px;
+        position: fixed;
+        z-index: 10000;
+        max-width: 1200px;
+        
+
         
         
         // @media (max-width:800px) {
