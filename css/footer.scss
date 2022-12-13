@@ -52,12 +52,17 @@ footer{
                 list-style: none;
 
                 li{
-                    margin-left: -15px;
-                    
+                    margin-left: -15px;     
+                                 
                     a{
                         color: $BurlyWood;
                         text-decoration: none;
                         font-size: 18px;
+                        &:hover{
+                            color:white ;
+
+                          }
+
                     }
                     &::before{
                         display: inline-block;
@@ -67,6 +72,7 @@ footer{
                         font-size: 10px;
                         color: $BrownLight;
                         margin-right: 9px;transform: rotate(45deg);
+                        
 
 
                     }

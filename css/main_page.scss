@@ -7,7 +7,6 @@
 
 .container_box {
     text-align: center;
-
     width: 100%;
     min-height: 70vh;
     display: flex;
@@ -83,7 +82,7 @@
 
 
   }
-  
+
   .second {
     background-image: url('../img/bg1.jpg');
     background-attachment: fixed;
@@ -167,7 +166,8 @@
       margin-bottom: 2em;
 
       &:hover{
-        color:$BurlyWood ;
+        color:$BrownLight ;
+        @include  links;
       }
     }
       }

@@ -19,7 +19,6 @@ header .nav {
   top: 26px;
   position: fixed;
   z-index: 10000;
-  max-width: 1200px;
 }
 header .nav > .nav-header {
   display: inline;
@@ -302,7 +301,11 @@ header .nav > #nav-check {
   margin-bottom: 2em;
 }
 .second .card a:hover {
-  color: #DEB887;
+  color: #996633;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 footer {
@@ -369,6 +372,9 @@ footer .footer_flex_wrapper .footer_wrapper_left ul li a {
   color: #DEB887;
   text-decoration: none;
   font-size: 18px;
+}
+footer .footer_flex_wrapper .footer_wrapper_left ul li a:hover {
+  color: white;
 }
 footer .footer_flex_wrapper .footer_wrapper_left ul li::before {
   display: inline-block;
