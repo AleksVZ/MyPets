@@ -3,13 +3,10 @@ footer{
     padding-top: 50px;
     padding-bottom: 50px;
 
-
-
     .footer_flex_wrapper{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-
 
         .footer_wrapper_right{
 
@@ -29,17 +26,17 @@ footer{
                 }
                 @media (max-width: 600px) {
                     font-size: 90px;
-                  }
+                }
                   @media (max-width: 436px) {
                     font-size: 60px;
-                  }
+                }
             }
             p:last-child{
                 font-weight: 700;
                 font-size: 20px;
                 color: $BurlyWood;      
                 margin-bottom: 15px;
-                  
+
             }
     
         }
@@ -53,7 +50,7 @@ footer{
 
                 li{
                     margin-left: -15px;     
-                                 
+
                     a{
                         color: $BurlyWood;
                         text-decoration: none;
@@ -61,7 +58,7 @@ footer{
                         &:hover{
                             color:white ;
 
-                          }
+                    }
 
                     }
                     &::before{
@@ -72,9 +69,9 @@ footer{
                         font-size: 10px;
                         color: $BrownLight;
                         margin-right: 9px;transform: rotate(45deg);
-                        
 
-
+                        position: relative;
+                        top: -2px;
                     }
                 }
                 

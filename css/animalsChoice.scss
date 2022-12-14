@@ -1,0 +1,121 @@
+.animalsChoice{
+
+    background: $BurlyWood;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1{
+        padding-top: 150px;
+        text-align: center;
+
+        font-size: 60px;
+        color: #663300;
+        font-weight: 900;
+
+        @media (max-width: 392px) {
+            font-size: 29px;
+        }
+    }
+    .animal_wraper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        gap: 1.6em;
+
+        @media (max-width: 689px) {
+            justify-content: center;
+        }
+
+
+
+        .animal_item{
+            // display: flex;
+            max-width: 320px;
+            width: 100%;
+            background-color: white;
+            // flex-direction: column;
+            // align-items: center;
+            border-radius: .5em;
+            -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+            -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+            box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+
+            text-align: center;
+            padding-top: 20px;
+
+            .animal_img{
+                width: 90%;
+                height: 200px;
+                background-color: lightgrey;
+                background-size: cover;
+                background-position: center;
+                // margin-top: 20px;
+                border-radius: .3em;;
+                margin: auto;
+
+            }
+            .animal_card{
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.6rem;
+                    margin-top: 1em;
+                    color: $Brown;
+                    text-align: center;
+                }
+                a {
+                    display: inline-block;
+                    padding: 1em 3.5em;
+                    color: $DarkBrown;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border-radius: 0.3em;
+                    font-weight: 700;
+                    letter-spacing: .5px;
+                    font-size: .875rem;
+                    margin-bottom: 2em;
+                    text-align: center;
+
+                    &:hover{
+                        color:$BrownLight ;
+                        @include  links;
+                    }
+                }
+
+            }
+            .animal_img-dog{
+                background-image: url('..//img/bgDog.jpg');
+            }
+            .animal_img-cat{
+                background-image: url('..//img/bg6.jpg');
+            }
+            .animal_img-bird{
+                background-image: url('..//img/bgBirds.jpg');
+            }
+            .animal_img-rodents{
+                background-image: url('..//img/bgRodents.jpg');
+            }
+            .animal_img-fish{
+                background-image: url('..//img/bgFish.jpg');
+            }
+            .animal_img-reptiles{
+                background-image: url('..//img/bgReptil.jpg');
+            }
+            .animal_img-insects{
+                background-image: url('..//img/bgAnt.jpg');
+            }
+            .animal_img-exotic{
+                background-image: url('..//img/bgExotic.jpg');
+            }
+
+        }
+
+
+    }
+
+
+
+
+
+}

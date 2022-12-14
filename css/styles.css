@@ -19,6 +19,7 @@ header .nav {
   top: 26px;
   position: fixed;
   z-index: 10000;
+  left: 0;
 }
 header .nav > .nav-header {
   display: inline;
@@ -386,9 +387,119 @@ footer .footer_flex_wrapper .footer_wrapper_left ul li::before {
   margin-right: 9px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+  position: relative;
+  top: -2px;
 }
 footer .footer_flex_wrapper .footer_wrapper_left ul:first-child {
   margin-right: 60px;
+}
+
+.animalsChoice {
+  background: #DEB887;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.animalsChoice h1 {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  color: #663300;
+  font-weight: 900;
+}
+@media (max-width: 392px) {
+  .animalsChoice h1 {
+    font-size: 29px;
+  }
+}
+.animalsChoice .animal_wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  gap: 1.6em;
+}
+@media (max-width: 689px) {
+  .animalsChoice .animal_wraper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.animalsChoice .animal_wraper .animal_item {
+  max-width: 320px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+  text-align: center;
+  padding-top: 20px;
+}
+.animalsChoice .animal_wraper .animal_item .animal_img {
+  width: 90%;
+  height: 200px;
+  background-color: lightgrey;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0.3em;
+  margin: auto;
+}
+.animalsChoice .animal_wraper .animal_item .animal_card h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+  color: #663300;
+  text-align: center;
+}
+.animalsChoice .animal_wraper .animal_item .animal_card a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  color: #4e2700;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  font-size: 0.875rem;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.animalsChoice .animal_wraper .animal_item .animal_card a:hover {
+  color: #996633;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-dog {
+  background-image: url("..//img/bgDog.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-cat {
+  background-image: url("..//img/bg6.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-bird {
+  background-image: url("..//img/bgBirds.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-rodents {
+  background-image: url("..//img/bgRodents.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-fish {
+  background-image: url("..//img/bgFish.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-reptiles {
+  background-image: url("..//img/bgReptil.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-insects {
+  background-image: url("..//img/bgAnt.jpg");
+}
+.animalsChoice .animal_wraper .animal_item .animal_img-exotic {
+  background-image: url("..//img/bgExotic.jpg");
 }
 
 .container {
