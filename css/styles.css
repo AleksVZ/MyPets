@@ -502,6 +502,53 @@ footer .footer_flex_wrapper .footer_wrapper_left ul:first-child {
   background-image: url("..//img/bgExotic.jpg");
 }
 
+.Dogs_Catalog {
+  background: #DEB887;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.Dogs_Catalog h1 {
+  padding-top: 150px;
+  text-align: center;
+  font-size: 60px;
+  color: #663300;
+  font-weight: 900;
+}
+@media (max-width: 392px) {
+  .Dogs_Catalog h1 {
+    font-size: 29px;
+  }
+}
+.Dogs_Catalog #inputSearchDogs {
+  width: 100%;
+  font-style: 16px;
+  padding: 12px 20px 12px 5px;
+  border: 1px solid black;
+  margin-bottom: 12px;
+}
+.Dogs_Catalog #letter {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Dogs_Catalog #letter li a {
+  border: 1px solid black;
+  margin-top: -1px;
+  background-color: grey;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+.Dogs_Catalog #letter li a:hover:not(.letterSearch) {
+  background-color: red;
+}
+.Dogs_Catalog #letter li a.letterSearch {
+  background-color: yellow;
+  cursor: default;
+}
+
 .container {
   max-width: 1200px;
   margin: auto;

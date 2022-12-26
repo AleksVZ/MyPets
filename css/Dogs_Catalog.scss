@@ -1,0 +1,53 @@
+.Dogs_Catalog {
+    background: $BurlyWood;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    h1{
+        padding-top: 150px;
+        text-align: center;
+
+        font-size: 60px;
+        color: #663300;
+        font-weight: 900;
+
+        @media (max-width: 392px) {
+            font-size: 29px;
+        }
+    }
+
+    #inputSearchDogs{
+        width: 100%;
+        font-style: 16px;
+        padding: 12px 20px 12px 5px;
+        border: 1px solid black;
+        margin-bottom: 12px;
+    }
+    #letter{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    #letter li a {
+        border: 1px solid black;
+        margin-top: -1px;
+        background-color: grey;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px;
+        color: black;
+        display: block;
+        &:hover:not(.letterSearch){
+            background-color: red;
+
+        }
+    }
+    #letter li a.letterSearch{
+        background-color: yellow;
+        cursor: default;
+    }
+
+
+
+
+}
